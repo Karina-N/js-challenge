@@ -1,0 +1,124 @@
+body {
+    display: grid;
+    grid-template-rows: 50px, repeat(6, 1fr);
+    grid-template-areas:
+    "hed"
+    "row1"
+    "row2"
+    "test-header"
+    "testimonials"
+    "button-row"
+    "footer";
+}
+
+header {
+    grid-area: hed;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    grid-template-areas:
+    "logo nav button";
+    
+}
+
+    body > header > img {
+        grid-area: logo;
+    }
+
+    body > header > nav {
+        grid-area: nav;
+    }
+
+    body > header > a {
+        grid-area: button;
+    }
+
+
+main > .row1 {
+    grid-area: row1;
+    background-color: lightcyan;
+    display: grid;
+    grid-template-areas:
+    "row1-text row1-image";
+}
+
+    main > .row1 > .row1-image {
+        grid-area: row1-image;
+        height: 500px;
+    } 
+
+    main > .row1 > .row1-text {
+        grid-area: row1-text;
+    } 
+
+main > .row2 {
+    grid-area: row2;
+    background-color: lightgrey;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "row2-text1 row2-text2";
+}
+    main > .row2 > .row2-text1 {
+        grid-area: row2-text1;
+    }
+
+    main > .row2 > .row2-text2 {
+        grid-area: row2-text2;
+    }
+
+main > .testimonials-header {
+    grid-area: test-header;
+}
+main > .testimonials {
+    grid-area: testimonials;
+    background-color: lightgoldenrodyellow;
+    display: grid;
+    grid-template-columns: reapeat(3, 1fr);
+    grid-template-areas:
+    "test1 test2 test3";
+}
+    main > .testimonials > .testimonial1 {
+        grid-area: test1;
+    }
+
+    main > .testimonials > .testimonial2 {
+        grid-area: test2;
+    }
+
+    main > .testimonials > .testimonial3 {
+        grid-area: test3;
+    }
+
+main > .button-row {
+    grid-area: button-row;
+    background-color: lightcoral;
+}
+
+footer {
+    grid-area: footer;
+    background-color: lightslategray;
+}
+
+
+@media (max-width: 460px) {
+    
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "logo nav";
+        
+    }   
+        body > header > #header-button {
+            display: none;
+        }
+
+
+}
+
+
+
+
+
+
