@@ -7,15 +7,14 @@ body {
     "row2"
     "test-header"
     "testimonials"
-    "button-row"
+    "orange-row"
     "footer";
 }
 
 header {
     grid-area: hed;
-    background-color: lightblue;
     display: grid;
-    grid-template-columns: 300px 1fr 300px;
+    grid-template-columns: 300px 1fr 150px;
     grid-template-areas:
     "logo nav button";
     
@@ -27,24 +26,26 @@ header {
 
     body > header > nav {
         grid-area: nav;
+
     }
 
     body > header > a {
         grid-area: button;
+
     }
 
 
 main > .row1 {
     grid-area: row1;
-    background-color: lightcyan;
     display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "row1-text row1-image";
 }
 
     main > .row1 > .row1-image {
         grid-area: row1-image;
-        height: 500px;
+        /* height: 500px; */
     } 
 
     main > .row1 > .row1-text {
@@ -53,7 +54,6 @@ main > .row1 {
 
 main > .row2 {
     grid-area: row2;
-    background-color: lightgrey;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -67,42 +67,46 @@ main > .row2 {
         grid-area: row2-text2;
     }
 
-main > .testimonials-header {
+main > .testimonials-row > .testimonials-header {
     grid-area: test-header;
 }
-main > .testimonials {
+main > .testimonials-row > .testimonials {
     grid-area: testimonials;
-    background-color: lightgoldenrodyellow;
     display: grid;
     grid-template-columns: reapeat(3, 1fr);
+    gap: 20px;
     grid-template-areas:
     "test1 test2 test3";
 }
-    main > .testimonials > .testimonial1 {
+    main > .testimonials-row > .testimonials > .testimonial1 {
         grid-area: test1;
     }
 
-    main > .testimonials > .testimonial2 {
+    main > .testimonials-row > .testimonials > .testimonial2 {
         grid-area: test2;
     }
 
-    main > .testimonials > .testimonial3 {
+    main > .testimonials-row > .testimonials > .testimonial3 {
         grid-area: test3;
     }
 
-main > .button-row {
-    grid-area: button-row;
-    background-color: lightcoral;
+main > .orange-row {
+    grid-area: orange-row;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-areas:
+    "orange-text orange-button";
 }
 
 footer {
     grid-area: footer;
-    background-color: lightslategray;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "foot1 foot2 foot3 foot4";
 }
 
-
-@media (max-width: 460px) {
-    
+@media (max-width: 760px) {
     header {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -113,6 +117,26 @@ footer {
         body > header > #header-button {
             display: none;
         }
+
+    main > .row1 {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "row1-image"
+        "row1-text";
+    }
+
+    main > .row2 {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "row2-text1"
+        "row2-text2";
+    }
+
+    main > .testimonials-row > .testimonials {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "test1"
+    }
 
 
 }

@@ -1,0 +1,52 @@
+.testimonials-row > .testimonials-header {
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+main > .testimonials-row {
+    padding: 0 20px;
+    text-align: center;
+    padding-bottom: 40px;
+
+    
+}
+
+    main > .testimonials-row > .testimonials {
+        margin: 40px 0;
+    }
+
+    .testimonials-style {
+        background-color: hsl(0, 0%, 96%);
+        text-align: center;
+        padding: 20px;
+
+    }
+
+        .testimonials-style > img.avatar {
+            height: 70px;
+            margin-top: -50px;
+        }
+
+        .testimonials-style > h5.test-author {
+            margin: 10px 0;
+        }
+
+        .testimonials-style > p.test-p {
+            margin-bottom: 10px;
+            font-size: 18px;
+            line-height: 25px;
+            color: rgb(126, 126, 126);
+        }
+
+
+    .testimonials-row > a.button-row {
+        background-color: hsl(12, 88%, 59%);
+        text-decoration: none;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 25px;
+
+    }
+

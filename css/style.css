@@ -1,0 +1,222 @@
+/* body {
+    width: 1360px;
+    margin-left: calc((100% - 1360px) / 2 );
+    margin-right: calc((100% - 1360px) / 2 );
+} */
+
+body > header {
+    padding: 60px;
+}
+ 
+    body > header > a {
+        background-color: hsl(12, 88%, 59%);
+        text-decoration: none;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 25px;
+        text-align: center;
+        margin-right: 20px;
+        margin-top: -10px;
+    }
+
+    body > main > .row1 {
+        padding: 20px 60px;
+        margin-bottom: 60px;
+
+    }
+        body > main > .row1 > .row1-text {
+    
+        }
+        
+            body > main > .row1 > .row1-text > h1 { 
+                font-weight: normal;
+                font-size: 60px;
+                width: 70%;
+            }
+
+            body > main > .row1 > .row1-text > p { 
+                font-size: 18px;
+                line-height: 25px;
+                width: 50%;
+                margin: 20px 0 40px 0;
+                color: rgb(126, 126, 126);
+            }
+
+            body > main > .row1 > .row1-text > a {
+                background-color: hsl(12, 88%, 59%);
+                text-decoration: none;
+                color: white;
+                padding: 10px 25px;
+                border-radius: 25px;
+                text-align: center;
+            }
+        
+            body > main > .row1 > .row1-image {
+                width: 100%;
+                position: relative;
+                top: -20px;
+            }
+    
+    body > main > .row2 {
+        padding: 20px 60px;
+        
+    }
+        body > main > .row2 > .row2-text1 {
+            
+        }
+
+            body > main > .row2 > .row2-text1 > h2 {
+                font-weight: normal;
+                font-size: 40px;
+                width: 70%;
+            }
+
+            body > main > .row2 > .row2-text1 > p {
+                font-size: 18px;
+                line-height: 25px;
+                width: 50%;
+                margin: 20px 0;
+                color: rgb(126, 126, 126);
+            }
+
+        body > main > .row2 > .row2-text2 {
+            font-size: 18px;
+            line-height: 25px;
+            font-size: 18px;
+            margin-left: 120px;
+   
+        }
+
+        body > main > .row2 > .row2-text2 > .item {
+            margin-bottom: 60px;
+            
+        }
+
+        body > main > .row2 > .row2-text2 > .item > h4 {
+            
+        }
+
+        body > main > .row2 > .row2-text2 > .item > h4 > span {
+            background-color: hsl(12, 88%, 59%);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 20px;
+            text-align: center;
+            margin-left: -85px;
+            margin-right: 20px;
+            
+            font-weight: normal;
+           
+        }
+
+        body > main > .row2 > .row2-text2 > .item > p {
+            margin: 20px 0;
+            line-height: 25px;
+            color: rgb(126, 126, 126);
+        }
+
+    main > .orange-row {
+        background-color: hsl(12, 88%, 59%);
+        margin-top: 100px;
+        color: white;
+        padding: 40px 80px;
+        
+        
+    }
+        main > .orange-row > h1 {
+            font-weight: normal;
+            font-size: 40px;
+            width: 50%;
+            margin-left: 60px;
+            
+        }
+
+        main > .orange-row > #orange-button {
+            position: relative;
+        }
+
+        main > .orange-row > #orange-button > a {
+            text-decoration: none;
+            color: hsl(12, 88%, 59%);
+            background-color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+
+    footer {
+        padding: 40px 80px;
+        color: hsl(0, 0%, 98%);
+        background-color: hsl(233, 12%, 13%);
+        font-size: 14px;
+    }
+
+        footer > .foot4 > form {
+            margin-bottom: 60px;
+        }
+        footer > .foot4 > .copy-links {
+            float: right;
+        }
+
+        footer > .foot4 > .copy-links > a {
+            text-decoration: none;
+            color: lightgrey;
+            
+        }
+
+        
+
+        
+        @media (max-width: 960px) {
+            body > main > .row1 > .row1-text > h1 {
+                font-size: 40px;
+            }
+
+            main > .orange-row > h1 {
+                width: 80%;
+                margin-left: 0px;
+                
+            }
+        }
+
+
+        @media (max-width: 760px) {
+
+            body > main > .row1 > .row1-text {
+                text-align: center;
+            }
+            body > main > .row1 > .row1-text > h1 { 
+                width: 100%;
+            }
+            body > main > .row1 > .row1-text > p { 
+                width: 100%;
+            }
+
+            body > main > .row2 > .row2-text1 > h2 {
+                width: 100%;
+            }
+            body > main > .row2 > .row2-text1 > p {
+                width: 100%;
+            }
+
+            main > .orange-row {
+                padding: 40px 40px;
+                
+                
+            }
+
+                main > .orange-row > h1 {
+                    font-size: 20px;
+                    width: 100%;
+                }
+
+        }
+
+
+
+
+  
