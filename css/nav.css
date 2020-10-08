@@ -27,6 +27,12 @@ ul.nav > a.foot-a {
     color: white;
 }
 
+@media (max-width: 960px) {
+    .nav-top > li.nav > a {
+        padding: 5px 15px; 
+    }
+}
+
 @media (max-width: 800px) {
     ul.nav-top {
         display: none;
@@ -62,6 +68,9 @@ header > img {
         top: 120px;
         right: 80px;
         line-height: 30px;
+        width: 200px;
+        border: 1px solid #fff0ec;
+        text-align: center;
 
     }
 }

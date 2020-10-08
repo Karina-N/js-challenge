@@ -1,11 +1,9 @@
-/* body {
-    width: 1360px;
-    margin-left: calc((100% - 1360px) / 2 );
-    margin-right: calc((100% - 1360px) / 2 );
-} */
+
 
 body > header {
-    padding: 80px;  
+    padding: 80px; 
+    /* position: relative; */
+    
 }
 
 body > header > .background-image-1 {
@@ -15,6 +13,8 @@ body > header > .background-image-1 {
     width: 60vw;
     height: 900px;
     position: absolute;
+    /* top: 0;
+    bottom: 0; */
     z-index: -1;
     transform: translate(80%, -25%);   
 }
@@ -83,7 +83,7 @@ body > header > .background-image-1 {
         
     }
         body > main > .row2 > .row2-text1 {
-            
+            margin-bottom: 30px;
         }
 
             body > main > .row2 > .row2-text1 > h2 {
@@ -174,7 +174,7 @@ body > header > .background-image-1 {
         
         @media (max-width: 960px) {
             body > main > .row1 > .row1-text > h1 {
-                font-size: 40px;
+                font-size: 25px;
             }
 
             main > .orange-row > h1 {
@@ -191,8 +191,6 @@ body > header > .background-image-1 {
             body > header > .background-image-1 {
                 width: 100vw;
                 height: 900px;
-                position: absolute;
-                z-index: -1;
                 transform: translate(25%, -15%);   
             }
 
@@ -208,15 +206,39 @@ body > header > .background-image-1 {
 
             body > main > .row2 > .row2-text1 > h2 {
                 width: 100%;
+                text-align: center;
             }
             body > main > .row2 > .row2-text1 > p {
                 width: 100%;
             }
 
+            body > main > .row2 {
+                padding: 20px 80px;
+                  
+            }
+
+            body > main > .row2 > .row2-text2 {
+                margin-left: 0px;
+       
+            }
+
+            body > main > .row2 > .row2-text2 > .item > h4 {
+                background-color: hsl(13, 100%, 96%);
+                border-radius: 20px;
+                padding: 10px 0px;
+                font-weight: normal;
+                
+            }
+    
+            body > main > .row2 > .row2-text2 > .item > h4 > span {
+
+                margin-left: 0px;
+                font-weight: normal;
+               
+            }
+
             main > .orange-row {
-                padding: 40px 40px;
-                
-                
+                padding: 40px 60px 40px 100px;  
             }
 
                 main > .orange-row > h1 {
@@ -224,8 +246,16 @@ body > header > .background-image-1 {
                     width: 100%;
                 }
 
-        }
+                main > .orange-row > #orange-button > a {
+                    width: 150px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;  
+                    font-size: 14px;
+                }
 
+
+        }
 
 
 

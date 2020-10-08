@@ -117,6 +117,41 @@ footer {
         body > header > #header-button {
             display: none;
         }
+
+        footer {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        footer > .foot1 > img {
+            grid-column-start: 1;
+            grid-column-end: two;
+            grid-row-start: row0-start;
+            grid-row-end: 1;
+        }
+
+        footer > .foot4 {
+            grid-column-start: 2;
+            grid-column-end: four;
+            grid-row-start: row0-start;
+            grid-row-end: 1;
+            
+        }
+
+        footer > .foot2 {
+            grid-column-start: 1;
+            grid-column-end: two;
+            grid-row-start: row1-start;
+            grid-row-end: 2;
+        }
+
+        footer > .foot3 {
+            grid-column-start: 2;
+            grid-column-end: three;
+            grid-row-start: row1-start;
+            grid-row-end: 2;
+        }
+
+
 }
 
 @media (max-width: 800px) {
@@ -139,44 +174,38 @@ footer {
         grid-template-columns: 1fr;
         grid-template-areas:
         "test1"
+        "test2"
+        "test3";
     }
 
-    footer > .foot1 > img {
-        display: none;
+    main > .orange-row {
+        grid-template-columns: 1fr 1fr;
     }
 
-    footer > .foot4 > .copy-links {
-        display: none;
-    }
-
-    footer {
-        grid-template-rows: repeat(3, 1fr);
+    /* footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
         grid-template-areas:
         "form"
-        "menu"
+        "foot2"
+        "foot3"
         "socials"
+        "image"
+        "copy"
     }
-
-        footer > .foot4 {
-            grid-area: form;
+        footer > .foot4 > .form {
+            grid-column-start: 1;
+            grid-column-end: two;
+            grid-row-start: row0-start;
+            grid-row-end: 2;
         }
 
-        footer > .foot2 >   {
-            grid-area: form;
-        }
-
-        footer > .foot1  {
-            grid-area: socials;
-        }
-
-        
-    
-
-
+        footer > .foot1 > img {
+            grid-column-start: 1;
+            grid-column-end: two;
+            grid-row-start: row4-start;
+            grid-row-end: 5;
+        } */
 }
-
-
-
-
 
 

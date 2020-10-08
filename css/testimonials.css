@@ -7,11 +7,8 @@
 }
 
 main > .testimonials-row {
-    padding: 0 20px;
+    padding: 0 20px 40px 0;
     text-align: center;
-    padding-bottom: 40px;
-
-    
 }
 
     main > .testimonials-row > .testimonials {
@@ -53,3 +50,13 @@ main > .testimonials-row {
 
     }
 
+    @media (max-width: 800px) {
+
+        main > .testimonials-row {
+            padding: 0 40px 40px 20px;
+            text-align: center;
+        }
+        main > .testimonials-row > .testimonials {
+            margin: 40px 40px;
+        }
+    }
