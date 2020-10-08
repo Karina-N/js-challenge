@@ -14,7 +14,7 @@ body {
 header {
     grid-area: hed;
     display: grid;
-    grid-template-columns: 300px 1fr 150px;
+    grid-template-columns: 150px 1fr 150px;
     grid-template-areas:
     "logo nav button";
     
@@ -26,7 +26,6 @@ header {
 
     body > header > nav {
         grid-area: nav;
-
     }
 
     body > header > a {
@@ -101,22 +100,26 @@ main > .orange-row {
 footer {
     grid-area: footer;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr), 1.5fr;
     grid-template-areas:
     "foot1 foot2 foot3 foot4";
 }
 
-@media (max-width: 760px) {
+@media (max-width: 960px) {
     header {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 200px 1fr;
         grid-template-areas:
         "logo nav";
-        
+
     }   
+
         body > header > #header-button {
             display: none;
         }
+}
+
+@media (max-width: 800px) {
 
     main > .row1 {
         grid-template-columns: 1fr;
@@ -137,6 +140,37 @@ footer {
         grid-template-areas:
         "test1"
     }
+
+    footer > .foot1 > img {
+        display: none;
+    }
+
+    footer > .foot4 > .copy-links {
+        display: none;
+    }
+
+    footer {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "form"
+        "menu"
+        "socials"
+    }
+
+        footer > .foot4 {
+            grid-area: form;
+        }
+
+        footer > .foot2 >   {
+            grid-area: form;
+        }
+
+        footer > .foot1  {
+            grid-area: socials;
+        }
+
+        
+    
 
 
 }

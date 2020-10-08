@@ -5,16 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <title>Frontend Mentor | Manage landing page</title>
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/testimonials.css">
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/layout.css">
   <link rel="stylesheet" href="./css/style.css">
 
 </head>
 <body>
   <header>
+    <div class="background-image-1"></div>
     <img src="./images/logo.svg" alt="">
-    <nav>NAV</nav>
+    <nav>
+      <ul class="nav-top nav-desktop">
+        <li class="nav"><a href="#">Pricing</a></li>
+        <li class="nav"><a href="#">Product</a></li>
+        <li class="nav"><a href="#">About Us</a></li>
+        <li class="nav"><a href="#">Careers</a></li>
+        <li class="nav"><a href="#">Community</a></li>
+      </ul>
+      <div id="hamburger">
+        <i class="fa fa-bars"></i>
+      </div>
+    </nav>
     <a id="header-button" href="#">Get started</a>
   </header>
   <main>
@@ -53,19 +68,47 @@
   <footer>
     <div class="foot1">
       <img src="./images/logo.svg" alt="logo">
-      <div>SOCIALS</div>
+      <div class="socials">
+        <a href="#" target="_blank" class="fa fa-facebook"></a>
+        <a href="#" target="_blank" class="fa fa-youtube"></a>
+        <a href="#" target="_blank" class="fa fa-twitter"></a>
+        <a href="#" target="_blank" class="fa fa-pinterest"></a>
+        <a href="#" target="_blank" class="fa fa-instagram"></a>
+      </div>
     </div>
-    <div class="foot2">MENU1</div>
-    <div class="foot3">MENU2</div>
+    <div class="foot2">
+      <ul class="nav nav-bottom-left">
+        <li class="foot-a"><a href="#">Home</a></li>
+        <li class="foot-a"><a href="#">Pricing</a></li>
+        <li class="foot-a"><a href="#">Products</a></li>
+        <li class="foot-a"><a href="#">About Us</a></li>
+      </ul>
+    </div>
+    <div class="foot3">
+      <ul class="nav nav-bottom-right">
+        <li class="foot-a"><a href="#">Careers</a></li>
+        <li class="foot-a"><a href="#">Community</a></li>
+        <li class="foot-a"><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="nav-footer">
+
+    </div>
     <div class="foot4">
-      <form>FORM</form>
+        <div class="form">
+          <form>
+            <input id="email" type="email" placeholder="Your email">
+            <label for="">Go</label>
+          </form>
+        </div>
       <div class="copy-links">
-        <a href="#">Copyright&copy;</a>
         <a href="#">All Rights Reserved</a>
+        <a href="#">Copyright 2020</a> 
       </div>
     </div>
   </footer>
 
   <script src="./js/main.js" type="module"></script>
+  <script src="./js/hamburger.js"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@ function renderTestimonialItem(testimonial) {
     let HTML = '';
     
     for (let i=0; i< maxGallerySize; i++) {
+        
         if (i===0) {
         HTML += `<div class="testimonials testimonials1 testimonials-style">
         <img class="avatar" src="./images/${testimonial[i].photo}" alt="User profile picture">
