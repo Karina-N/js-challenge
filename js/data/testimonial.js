@@ -1,4 +1,4 @@
-export const testimonial = [
+const testimonial = [
     {
         photo: 'avatar-anisha.png',
         name: 'Anisha Li',

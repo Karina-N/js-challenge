@@ -1,22 +1,35 @@
-
+body {
+    
+}
 
 body > header {
     padding: 80px; 
     /* position: relative; */
+
+    
+}
+.background-image-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
     
 }
 
-body > header > .background-image-1 {
+.background-image-1 {
     background-image: url("../images/bg-tablet-pattern.svg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 60vw;
     height: 900px;
     position: absolute;
-    /* top: 0;
-    bottom: 0; */
+    top: 0;
+    right: 0;
     z-index: -1;
-    transform: translate(80%, -25%);   
+    transform: translate(20%, -10%);   
 }
 
     body > header > img {
@@ -147,7 +160,7 @@ body > header > .background-image-1 {
         main > .orange-row > h1 {
             font-weight: normal;
             font-size: 40px;
-            width: 50%;
+            width: 60%;
             margin-left: 60px;
             
         }

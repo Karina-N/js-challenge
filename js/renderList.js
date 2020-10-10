@@ -8,7 +8,7 @@ function renderList(list) {
 
     for (let i=0; i < countList; i++) {
         const item = list[i];
-        HTML += renderListItem(item);
+        HTML += renderListItem(item, i);
     }
 
     // console.log(HTML);

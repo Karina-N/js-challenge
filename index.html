@@ -15,8 +15,9 @@
 
 </head>
 <body>
+  <div class="background-image-container"><div class="background-image-1"></div></div>
   <header>
-    <div class="background-image-1"></div>
+    
     <img src="./images/logo.svg" alt="">
     <nav>
       <ul class="nav-top nav-desktop">
@@ -94,9 +95,10 @@
 
     <div class="foot4">
         <div class="form">
-          <form>
-            <input id="email" type="email" value="email" placeholder="Your email">
-            <a href="#" class="label">Go</a>
+          <form id="formEmail" class="formControl">
+            <input id="email" placeholder="Your email">
+            <small class='error'>Please insert a valid email</small>
+            <button type='submit' id="go" class="label">Go</button>
           </form>
         </div>
       <div class="copy-links">
@@ -107,6 +109,7 @@
   </footer>
 
   <script src="./js/main.js" type="module"></script>
-  <script src="./js/hamburger.js"></script>
+  <!-- <script src="./js/hamburger.js"></script> -->
+  <script src="./js/emailForm.js"></script>
 </body>
 </html>
